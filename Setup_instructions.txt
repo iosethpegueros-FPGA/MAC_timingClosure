@@ -1,9 +1,10 @@
-
-
 #INSTRUCTIONS TO BUILD PROJECT IN WINDOWS
 #set FPGA_ROOT environment variable to the location of your MAC_timingClosure repo
 #eg
 set FPGA_ROOT="C:\projects\MAC_timingClosure"
+#validate variable
+echo %FPGA_ROOT%
+
 
 
 #run vivado in bash mode
@@ -15,7 +16,7 @@ vivado -mode tcl
 
 
 
-#creat project / build / generate bitfiles eith scripts under
+#creat project / build / generate bitfiles with the scripts under
 %FPGA_ROOT%/scripts
 
 #create project
